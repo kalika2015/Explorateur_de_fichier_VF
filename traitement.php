@@ -81,6 +81,12 @@ include('filtrage/auth_filter.php');
                         <img src="icone/picture.png" alt="" width="60"><?php echo $dir; ?>
                     </a>
                     <?php
+                }  elseif ($extension == "zip") {
+                    ?>
+                    <a class="folder" href="../<?php echo $dossier . $dir; ?>">
+                        <img src="icone/zip.png" alt="" width="60"><?php echo $dir; ?>
+                    </a>
+                    <?php
                 } else{
                     ?>
                     <a class="folder" href="../<?php echo $dossier.$dir; ?>">

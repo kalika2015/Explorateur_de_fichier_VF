@@ -40,9 +40,9 @@ include('filtrage/auth_filter.php');
         <a href="#" id="download" title="Download"><i class="fas fa-cloud-download-alt fa-lg"></i></a>
         <a href="#" id="createFolder" title="New Folder">+<i class="fas fa-folder fa-lg"></i></a>
         <a href="#" id="copy" title="Copy"><i class="fas fa-copy fa-lg"></i></a>
-        <a href="#"><i class="fas fa-paste fa-lg"></i></a>
+        <!-- <a href="#"><i class="fas fa-paste fa-lg"></i></a> -->
         <a href="#" id="sup" title="Delete"><i class="fas fa-trash-alt fa-lg"></i></a>
-        <a href="#"><i class="fas fa-info-circle fa-spin fa-lg"></i></a>
+        <a href="#" id="infos" title="Infos"><i class="fas fa-info-circle fa-spin fa-lg"></i></a>
         <a href="logout.php" title="Sign-Out"><i class="fas fa-sign-out-alt fa-lg"></i></a>
     </header>
 
@@ -123,6 +123,20 @@ include('filtrage/auth_filter.php');
         </div>
     </div>
 
-     <script src="js/main.js"></script>
+    <div class="bg-modal5">
+        <div class="modal-content5">
+            <div class="close5">+</div>
+            <h1>Information</h1>
+            <form class="infos">
+                <p><b>Upload: </b>Quand vous faites un upload, le fichier uploader va se trouver dans le dossier <b>Explorateur</b></p>
+                <p><b>Download: </b>Quand vous faites un download, si le fichier ou le dossier se trouve dans <b>Explorateur</b> on écrit directement le nom du fichier ou du dossier. Au cas contraire on met <b>../nom_du_dossier</b> pour télécharger en dehors de <b>Explorateur</b></p>
+                <p>C'est la même méthode pour les autres fonctionnalités, faut juste précisé le chemin</p>
+                <p>Exemple: <b>../bootstrap</b> quand on sort du dossier Explorateur</p>
+                <p>Exemple: <b>css/main.css</b> quand on est dans le dossier Explorateur</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

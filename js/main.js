@@ -48,3 +48,10 @@ document.getElementById('download').addEventListener('click', function () {
 document.querySelector('.close4').addEventListener('click', function () {
     document.querySelector('.bg-modal4').style.display = 'none';
 });
+
+document.getElementById('infos').addEventListener('click', function () {
+    document.querySelector('.bg-modal5').style.display = 'flex';
+});
+document.querySelector('.close5').addEventListener('click', function () {
+    document.querySelector('.bg-modal5').style.display = 'none';
+});

@@ -73,6 +73,12 @@ foreach($dirs as $dir){
                     <img src="icone/pdf.png" alt="" width="30"><br><?php echo $dir; ?><br><br>
                 </a>
                 <?php
+            } elseif ($extension == "zip") {
+                ?>
+                <a class="folder">
+                    <img src="icone/zip.png" alt="" width="30"><br><?php echo $dir; ?><br><br>
+                </a>
+                <?php
             } else{
                 ?>
                 <a class="folder">

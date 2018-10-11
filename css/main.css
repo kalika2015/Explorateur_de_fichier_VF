@@ -14,7 +14,7 @@ header{
     width: 100%;
     height: 100px;
     background: rgba(38,38,38,.5);
-    border-bottom: 2px solid rgba(38,38,38,.4);
+    border-bottom: 3px solid rgba(32,32,32,.4);
 }
 section{
     position: absolute;
@@ -30,7 +30,7 @@ aside{
     width: 20%;
     height: 592px;
     background: rgba(38,38,38,.5);
-    border-right: 2px solid rgba(38,38,38,.4);
+    border-right: 3px solid rgba(32,32,32,.4);
 }
 a{
     text-decoration: none;
@@ -69,7 +69,7 @@ a > img{
 .bloc{
     width: 50px;
 }
-.bg-modal, .bg-modal1, .bg-modal2, .bg-modal3, .bg-modal4{
+.bg-modal, .bg-modal1, .bg-modal2, .bg-modal3, .bg-modal4, .bg-modal5{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
@@ -80,7 +80,7 @@ a > img{
     align-items: center;
     display: none;
 }
-.modal-content, .modal-content1, .modal-content2, .modal-content3, .modal-content4{
+.modal-content, .modal-content1, .modal-content2, .modal-content3, .modal-content4, .modal-content5{
     width: 500px;
     height: 300px;
     background-color: #fff;
@@ -114,7 +114,10 @@ form{
     position: relative;
     top: 20%;
 }
-.close,.close1,.close2, .close3, .close4{
+.infos{
+    top: 5%;
+}
+.close,.close1,.close2, .close3, .close4, .close5{
     position: absolute;
     top: 0;
     right: 14px;

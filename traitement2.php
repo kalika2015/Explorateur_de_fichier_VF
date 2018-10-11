@@ -128,6 +128,6 @@ if (isset($_POST['download'])){
         ob_end_flush();
         readfile($dir);
     }
-    header('location: explorateur.php');
 }
+header('location: explorateur.php');
 /**  FIN DOWNLOAD **/
